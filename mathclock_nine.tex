@@ -1,0 +1,34 @@
+%####################################################################################################
+%                                         MATH Clock 
+% Mathematical clock using the number 9
+%####################################################################################################
+
+\documentclass[landscape,a3paper,extrafontsizes,12pt]{memoir}
+\usepackage[a3paper,margin=0.2cm]{geometry}
+\usepackage{tikz}
+\usepackage{amsmath}
+\begin{document}
+\begin{center}
+\vspace*{\fill}
+
+\begin{tikzpicture}
+    \foreach \x in {0,30,...,360} {
+        \draw [line width = 0.1cm] (\x:9cm) -- (\x:10.5cm);
+    };
+    \foreach \x in {0,6,...,360} {
+        \draw [line width = 0.05cm] (\x:10cm) -- (\x:10.5cm);
+    };
+    \draw (0:0cm) circle [radius = 0.2cm];
+
+    \node (1) at (60:7cm) {\Large $\boldsymbol{9^{9-9}}$};
+    \node (2) at (30:7cm) {\Large $\boldsymbol{\dfrac{9+9}{9}}$};
+    \node (3) at (0:7cm) {\Huge $\boldsymbol{\sqrt{\log_{9}{9^9}}}$};
+    \node (4) at (-30:7cm) {\Large $\boldsymbol{\sqrt{9}+\log_{9}9}$};
+    \node (5) at (-60:7cm) {\Large $\boldsymbol{\sqrt{9}!-\log_{9}9}$};
+    \node (6) at (-90:7cm) {\Huge $\boldsymbol{9 - \dfrac{9}{\sqrt{9}}}$};
+    \node (7) at (-120:7cm) {\Large $\boldsymbol{\sqrt{9}!+\dfrac{9}{9}}$};
+    \node (8) at (-150:7cm) {\Large $\boldsymbol{9 - \dfrac{9}{9}}$};
+    \node (9) at (-180:7cm) {\Huge $\boldsymbol{\sqrt[9]{9^9}}$};
+    \node (10) at (-210:7cm) {\Large $\boldsymbol{9 + \log_{9}{9}}$};
+    \node (11) at (-240:7cm) {\Large $\boldsymbol{\dfrac{99}{9}}$};
+    \node (12) at (-270:7cm) {\Huge $\boldsymbol{9 + \dfrac{9}{\sqrt{9}}}$}; \end{tikzpicture} \vspace*{\fill} \end{center} \end{document}
