@@ -1,0 +1,35 @@
+%########################################################################################################
+%                    REVERSED Clock 
+% Clock with regular numbers for backward turning clock.
+%########################################################################################################
+
+
+\documentclass[landscape,a3paper,extrafontsizes,12pt]{memoir}
+\usepackage[a3paper,margin=0.2cm]{geometry}
+\usepackage{tikz}
+\usepackage{amsmath}
+\begin{document}
+\begin{center}
+\vspace*{\fill}
+
+\begin{tikzpicture}
+    \foreach \x in {0,30,...,360} {
+        \draw [line width = 0.1cm] (\x:9cm) -- (\x:10.5cm);
+    };
+    \foreach \x in {0,6,...,360} {
+        \draw [line width = 0.05cm] (\x:10cm) -- (\x:10.5cm);
+    };
+    \draw (0:0cm) circle [radius = 0.2cm];
+
+    \node (1) at (60:7cm) {\Large $\boldsymbol{11}$};
+    \node (2) at (30:7cm) {\Large $\boldsymbol{10}$};
+    \node (3) at (0:7cm) {\Huge $\boldsymbol{9}$};
+    \node (4) at (-30:7cm) {\Large $\boldsymbol{8}$};
+    \node (5) at (-60:7cm) {\Large $\boldsymbol{7}$};
+    \node (6) at (-90:7cm) {\Huge $\boldsymbol{6}$};
+    \node (7) at (-120:7cm) {\Large $\boldsymbol{5}$};
+    \node (8) at (-150:7cm) {\Large $\boldsymbol{4}$};
+    \node (9) at (-180:7cm) {\Huge $\boldsymbol{3}$};
+    \node (10) at (-210:7cm) {\Large $\boldsymbol{2}$};
+    \node (11) at (-240:7cm) {\Large $\boldsymbol{1}$};
+    \node (12) at (-270:7cm) {\Huge $\boldsymbol{12}$}; \end{tikzpicture} \vspace*{\fill} \end{center} \end{document}
