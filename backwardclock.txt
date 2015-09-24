@@ -1,6 +1,7 @@
 %########################################################################################################
 %                    REVERSED Clock 
 % Clock with regular numbers for backward turning clock.
+% How-to for the clock : www.instructables.com/id/Make-a-Customized-Clock-that-Runs-Backwards/
 %########################################################################################################
 
 
