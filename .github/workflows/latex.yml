@@ -11,7 +11,7 @@ jobs:
         with:
           root_file: mathclock_nine.tex 
       - run: mkdir -p pdf/
-      - run: mv mathclock_nine.pdf > pdf/mathclock_nine.pdf
+      - run: mv mathclock_nine.pdf  pdf/mathclock_nine.pdf
       - uses: actions/upload-artifact@v2
         with:
           name: latex-artifact
