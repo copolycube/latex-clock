@@ -10,3 +10,16 @@ jobs:
         uses: dante-ev/latex-action@master
         with:
           root_file: mathclock_nine.tex 
+
+  upload_latex:
+    steps:
+      - uses: actions/checkout@v2
+
+      - run: mkdir -p pdf
+
+      - run: mv mathclock_nine.pdf > pdf/mathclock_nine.pdf
+
+      - uses: actions/upload-artifact@v2
+        with:
+          name: my-artifact
+          path: pdf/mathclock_nine.pdf
